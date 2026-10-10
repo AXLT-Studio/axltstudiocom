@@ -47,15 +47,14 @@
 .appVisual img { display: block; width: 44%; height: auto; max-height: 100%; object-fit: contain; object-position: bottom; border-radius: 12px; }
 .appGridExpanded .appVisual { aspect-ratio: 16 / 11; padding-top: 40px; gap: 14px; }
 .appGridExpanded .appVisual img { width: 29%; }
-.appCard h3, .otherCard h3 { font-size: 20px; line-height: 1.3; letter-spacing: -.02em; }
+.appCard h2, .appCard h3, .otherCard h2, .otherCard h3 { font-size: 20px; line-height: 1.3; letter-spacing: -.02em; }
 .appCard p, .otherCard p { font-size: 15px; }
-.appGridExpanded h3 { font-size: 24px; }
+.appCard .projectTags, .otherCard .projectTags { margin-top: 6px; font-size: 12px; color: var(--muted); }
+.appGridExpanded h2, .appGridExpanded h3 { font-size: 24px; }
 .facts { margin: 14px 0 0; font-size: 14px; }
 .facts > div { display: flex; gap: 20px; padding-block: 4px; }
 .facts dt { flex: 0 0 88px; font-size: 13px; color: var(--muted); }
 .facts dd { margin: 0; }
-.workSection { padding-top: 0; }
-.workSection::before { display: none; }
 
 .rallyRow { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); align-items: center; gap: 64px; padding-block: var(--section-space); }
 .rallyCopy { min-width: 0; display: flex; flex-direction: column; gap: 20px; }
@@ -64,9 +63,11 @@
 .rallyImage { display: block; width: 100%; height: auto; }
 .badge { align-self: flex-start; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
 .badge::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--brand); }
-.otherGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
 .otherCard { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .otherCard img { display: block; width: 100%; height: auto; margin-bottom: 16px; }
+.caseStudyVisual { display: block; width: 100%; aspect-ratio: 1; margin-bottom: 16px; overflow: hidden; background: var(--surface-subtle); }
+.caseStudyVisual img { width: 100%; height: 100%; object-fit: contain; margin-bottom: 0; }
+.appGridExpanded .caseStudyVisual { aspect-ratio: 16 / 11; }
 .otherCard .textLink { margin-top: 6px; }
 
 .footer { position: relative; padding-top: 40px; padding-bottom: 32px; display: flex; flex-direction: column; gap: 40px; }
@@ -100,14 +101,13 @@
   .sectionHeading { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .sectionHeading > .eyebrow { padding-top: 0; }
   .sectionHeading > p { grid-column: 1; }
-  .serviceCards, .appGrid, .appGridExpanded, .otherGrid, .rallyRow { grid-template-columns: minmax(0, 1fr); }
+  .serviceCards, .appGrid, .appGridExpanded, .rallyRow { grid-template-columns: minmax(0, 1fr); }
   .serviceCards { gap: 36px; }
   .appGrid, .appGridExpanded { gap: 44px; }
   .appVisual { padding-top: 28px; }
   .appGridExpanded .appVisual { padding-inline: 20px; gap: 10px; }
   .rallyRow { gap: 32px; }
   .rallyCopy h2 { max-width: 440px; }
-  .otherGrid { gap: 40px; }
   .pageIntro { padding-bottom: 56px; }
   .footer { gap: 28px; }
   .footer nav { gap: 24px; }

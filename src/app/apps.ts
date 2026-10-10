@@ -2,6 +2,7 @@ export const appStoreCards = [
   {
     icon: "/images/app_store/asvab_icon.png",
     name: "ASVAB 2026: Ultimate Prep",
+    tags: ["apps", "digital-products"] as const,
     description: "Secure Your Dream Job",
     rating: 5,
     numRating: 3,
@@ -17,6 +18,7 @@ export const appStoreCards = [
   {
     icon: "/images/app_store/kokyu_icon.png",
     name: "Kokyu: Apnea Training",
+    tags: ["apps", "digital-products"] as const,
     description: "Improve your apnea and stamina",
     rating: 5,
     numRating: 5,
@@ -32,6 +34,7 @@ export const appStoreCards = [
   {
     icon: "/images/app_store/leetcard_icon.png",
     name: "LeetCard: AI-Powered Flashcard",
+    tags: ["apps", "digital-products"] as const,
     description: "Your best LeetCode companion",
     rating: 4,
     numRating: 45,
@@ -47,6 +50,7 @@ export const appStoreCards = [
   {
     icon: "/images/app_store/slacker_icon.png",
     name: "Slacker: Anti-Hustle Club",
+    tags: ["apps", "digital-products"] as const,
     description: "Networking for the Not Working",
     rating: 5,
     numRating: 5,
@@ -61,6 +65,7 @@ export const appStoreCards = [
   {
     icon: "/images/app_store/monsterdex_icon.png",
     name: "MonsterDex: The Ultimate Guide",
+    tags: ["apps", "digital-products"] as const,
     description: "Track, Learn, and Build",
     rating: 5,
     numRating: 137,
@@ -74,3 +79,5 @@ export const appStoreCards = [
     accentColor: "#FFB800",
   },
 ];
+
+export type AppStoreCard = (typeof appStoreCards)[number];
