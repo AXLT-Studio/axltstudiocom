@@ -14,7 +14,7 @@ export default function Home() {
    <div className={styles.serviceCards}>{serviceGroups.map((group,index) => <article className={styles.serviceCard} key={group.title}><span className={styles.coordinates}>0{index+1}</span><h3>{group.title}</h3><p>{summaries[index]}</p><div>{group.services.map(service => <div className={styles.servicePreview} key={service.title}><h4>{service.title}</h4><p>{service.description}</p></div>)}</div></article>)}</div>
    <Link href="/services" className={styles.textLink}>All services →</Link>
   </div></section>
-  <section id="work" className={`${styles.container} ${styles.section}`}><div className={styles.sectionHeading}><span className={styles.eyebrow}>Selected work</span><h2>Apps already in people’s hands</h2><p>A few of the apps designed and shipped before AXLT Studio. Explore the projects and their App Store releases.</p></div><AppCards /><Link href="/work" className={styles.textLink}>All work →</Link></section>
+  <section id="work" className={`${styles.container} ${styles.section}`}><div className={styles.sectionHeading}><span className={styles.eyebrow}>Selected work</span><h2>Apps already in people’s hands</h2><p>A few of the apps designed and shipped before AXLT Studio. Explore the projects and their iOS and Android releases.</p></div><AppCards /><Link href="/work" className={styles.textLink}>All work →</Link></section>
   <Rally /><OtherWorks />
  </main><Footer /></>;
 }

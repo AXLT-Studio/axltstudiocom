@@ -10,7 +10,8 @@ export const appStoreCards = [
       "/images/app_store/asvab_2.png",
       "/images/app_store/asvab_3.png",
     ],
-    link: "https://apps.apple.com/us/app/asvab-2026-ultimate-prep/id6754123678",
+    iosLink: "https://apps.apple.com/us/app/asvab-2026-ultimate-prep/id6754123678",
+    androidLink: "https://play.google.com/store/apps/details?id=com.kubicle.asvabapp&hl=en_US",
     accentColor: "#007AFF",
   },
   {
@@ -24,7 +25,8 @@ export const appStoreCards = [
       "/images/app_store/kokyu_2.png",
       "/images/app_store/kokyu_3.png",
     ],
-    link: "https://apps.apple.com/us/app/kokyu-apnea-training/id6749611776",
+    iosLink: "https://apps.apple.com/us/app/kokyu-apnea-training/id6749611776",
+    androidLink: "https://play.google.com/store/apps/details?id=com.kubicle.kokyu",
     accentColor: "#00D4FF",
   },
   {
@@ -38,7 +40,8 @@ export const appStoreCards = [
       "/images/app_store/leetcard_2.png",
       "/images/app_store/leetcard_3.png",
     ],
-    link: "https://apps.apple.com/us/app/leetcard-ai-powered-flashcard/id6478087443",
+    iosLink: "https://apps.apple.com/us/app/leetcard-ai-powered-flashcard/id6478087443",
+    androidLink: "https://play.google.com/store/apps/details?id=com.kubicle.leetcardapp&hl=en_US",
     accentColor: "#00D4FF",
   },
   {
@@ -52,7 +55,7 @@ export const appStoreCards = [
       "/images/app_store/slacker_2.png",
       "/images/app_store/slacker_3.png",
     ],
-    link: "https://apps.apple.com/us/app/slacker-the-anti-hustle-club/id6745766756",
+    iosLink: "https://apps.apple.com/us/app/slacker-the-anti-hustle-club/id6745766756",
     accentColor: "#FF6B35",
   },
   {
@@ -66,7 +69,8 @@ export const appStoreCards = [
       "/images/app_store/monsterdex_2.png",
       "/images/app_store/monsterdex_3.png",
     ],
-    link: "https://apps.apple.com/us/app/monsterdex-the-ultimate-guide/id6447112284",
+    iosLink: "https://apps.apple.com/us/app/monsterdex-the-ultimate-guide/id6447112284",
+    androidLink: "https://play.google.com/store/apps/details?id=com.kubicle.monsterdex",
     accentColor: "#FFB800",
   },
 ];
