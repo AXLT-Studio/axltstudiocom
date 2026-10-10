@@ -1,0 +1,15 @@
+.profile { padding-block: 80px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start; }
+.portraitColumn { flex: 1 1 320px; max-width: 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.portrait { aspect-ratio: 4/5; background: #d8d3c4; display: grid; place-items: center; color: var(--muted); font: 13px var(--mono-font); letter-spacing: .08em; }
+.bio { flex: 2 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+.bio h2 { font-size: clamp(32px,4vw,48px); line-height: 1.08; letter-spacing: -.025em; }
+.bio p { max-width: 620px; font-size: 19px; }
+.muted { color: var(--muted); }
+.directionGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.now, .next { padding: 36px 32px; display: flex; flex-direction: column; gap: 18px; }
+.now { background: var(--foreground); color: var(--background); }
+.now .eyebrow, .now > span { color: #aeb6ff; }
+.next { border: 2px solid var(--foreground); padding: 34px 30px; }
+.directionGrid p { border-top: 1px solid var(--line); padding-top: 14px; font-size: 19px; }
+.now p { border-color: #3a414c; }
+@media (max-width: 600px) { .profile { padding-block: 48px; } .directionGrid { grid-template-columns: minmax(0,1fr); } }

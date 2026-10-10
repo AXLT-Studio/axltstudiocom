@@ -1,14 +1,15 @@
-:root {
-  --background: #faf9f7;
-  --foreground: #242424;
-  color-scheme: light;
-}
-
-html { scroll-behavior: smooth; scroll-padding-top: 100px; }
-body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-geist-sans), Arial, sans-serif; }
-body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 0% 0%, #fff1b733, transparent 65%), radial-gradient(ellipse at 100% 100%, #ffdae633, transparent 65%); }
-a { color: inherit; text-decoration: none; }
+@font-face { font-family: 'Bricolage Grotesque'; src: url('/fonts/bricolage-grotesque.woff2') format('woff2'); font-weight: 500 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Hanken Grotesk'; src: url('/fonts/hanken-grotesk.woff2') format('woff2'); font-weight: 400 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/jetbrains-mono.woff2') format('woff2'); font-weight: 400 500; font-style: normal; font-display: swap; }
+:root { --background: #eceee9; --foreground: #12161c; --muted: #4f5763; --blue: #3d4fe0; --line: #c4c9c0; --paper: #f7f8f5; --heading-font: 'Bricolage Grotesque', Arial, sans-serif; --mono-font: 'JetBrains Mono', monospace; color-scheme: light; }
 * { box-sizing: border-box; }
-::selection { background: #ff008a; color: white; }
-:focus-visible { outline: 3px solid #cc006e; outline-offset: 5px; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font: 17px/1.55 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+h1,h2,h3,h4,p { margin: 0; }
+h1,h2,h3,h4 { font-family: var(--heading-font); font-weight: 700; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--blue); }
+button { font: inherit; }
+::selection { background: var(--blue); color: white; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

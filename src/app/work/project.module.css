@@ -1,19 +1,19 @@
-.project { max-width: 1008px; margin: 0 auto; padding: 128px 24px 0; }
-.back { color: #b00060; display: inline-block; margin-bottom: 40px; }
+.project { max-width: 1008px; margin: 0 auto; padding: 72px 24px 80px; }
+.back { color: var(--blue); display: inline-block; margin-bottom: 40px; }
 .project h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; line-height: 1.2; margin: 0 0 20px; }
 .subtitle { font-size: 24px; color: #555; }
 .tags { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0; }
-.tags span { font-size: 13px; background: #eee9eb; border-radius: 6px; padding: 6px 10px; }
-.cta { display: inline-block; background: #ff008a; color: white; border-radius: 10px; padding: 12px 20px; margin-bottom: 24px; }
-.heroImage, .detailImage { width: 100%; height: auto; border-radius: 16px; }
+.tags span { font-size: 13px; background: #d8d3c4; border-radius: 0; padding: 6px 10px; }
+.cta { display: inline-block; background: var(--blue); color: white; border-radius: 0; padding: 12px 20px; margin-bottom: 24px; }
+.heroImage, .detailImage { width: 100%; height: auto; border-radius: 0; }
 .overview { margin: 64px 0; }
 .project h2 { font-size: 26px; line-height: 1.4; font-weight: 700; margin: 48px 0 20px; }
 .project p { font-size: 18px; line-height: 1.7; margin: 20px 0; color: #4a4a4a; }
 .overview dl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 32px; }
-.overview dt { font-size: 13px; color: #b00060; font-weight: 600; }
+.overview dt { font-size: 13px; color: var(--blue); font-weight: 600; }
 .overview dd { margin: 8px 0 0; font-size: 15px; }
-.video { display: block; width: 100%; border-radius: 16px; }
+.video { display: block; width: 100%; border-radius: 0; }
 .detailImage { margin: 24px 0; }
-.note { padding: 32px; text-align: center; background: #fff0c9; border-radius: 16px; }
+.note { padding: 32px; text-align: center; background: #fff0c9; border-radius: 0; }
 .next { display: block; font-size: 24px; font-weight: 700; text-align: center; margin-top: 80px; }
-@media (max-width: 600px) { .overview dl { grid-template-columns: repeat(2, 1fr); } .project { padding: 112px 16px 0; } }
+@media (max-width: 600px) { .overview dl { grid-template-columns: repeat(2, 1fr); } .project { padding: 48px 16px 64px; } }
