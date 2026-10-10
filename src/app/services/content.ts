@@ -28,12 +28,30 @@ export const serviceGroups = [
     "description": "Shape the product and the brand around it, so they feel like they belong together.",
     "services": [
       {
-        "title": "App UX Design",
+        "title": "App Design",
         "description": "From the first sketch to files your developers can build from, for iOS and Android.",
         "deliverables": [
           "User flows and wireframes",
           "Visual UI design for every key screen",
           "A clickable prototype and developer-ready files"
+        ]
+      },
+      {
+        "title": "Web Design",
+        "description": "Websites, web apps and Shopify stores designed around your brand and your customers.",
+        "deliverables": [
+          {
+            "label": "Websites.",
+            "description": "Page layouts, content structure and visual design for studios, small businesses and portfolios."
+          },
+          {
+            "label": "Web apps.",
+            "description": "Flows, interfaces and interactive prototypes for products with accounts, dashboards or custom features."
+          },
+          {
+            "label": "Shopify stores.",
+            "description": "Storefront, product page and checkout design that looks like your brand and makes it easy to buy."
+          }
         ]
       },
       {
@@ -52,12 +70,39 @@ export const serviceGroups = [
     "description": "Put it online, then keep it working after the launch buzz fades.",
     "services": [
       {
-        "title": "Web Design & Development",
-        "description": "Marketing sites and web apps, designed and built by the same person, so nothing gets lost in handoff.",
+        "title": "Web Development",
+        "description": "Designs built into fast, reliable sites, tested on real devices.",
         "deliverables": [
-          "Page designs and a clear content structure",
-          "A fast, responsive site built and tested on real devices",
-          "Launch support and a handoff you can understand"
+          {
+            "label": "Websites.",
+            "description": "Responsive static sites that load quickly and are easy to update."
+          },
+          {
+            "label": "Web apps.",
+            "description": "Custom-built features, logins and data, from a first working version to launch."
+          },
+          {
+            "label": "Shopify stores.",
+            "description": "Theme setup and customization, product and collection structure, and launch support."
+          }
+        ]
+      },
+      {
+        "title": "App Development",
+        "description": "Mobile apps built around your designs, with support from the first working version to release.",
+        "deliverables": [
+          {
+            "label": "Mobile apps.",
+            "description": "Interfaces and interactions built around your designs and your customers."
+          },
+          {
+            "label": "Features and data.",
+            "description": "Accounts, data storage and integrations for your app’s core features."
+          },
+          {
+            "label": "Testing and release.",
+            "description": "Testing on real devices, fixes and support preparing your app for the store."
+          }
         ]
       },
       {
