@@ -1,15 +1,59 @@
 @font-face { font-family: 'Bricolage Grotesque'; src: url('/fonts/bricolage-grotesque.woff2') format('woff2'); font-weight: 500 800; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Hanken Grotesk'; src: url('/fonts/hanken-grotesk.woff2') format('woff2'); font-weight: 400 600; font-style: normal; font-display: swap; }
 @font-face { font-family: 'JetBrains Mono'; src: url('/fonts/jetbrains-mono.woff2') format('woff2'); font-weight: 400 500; font-style: normal; font-display: swap; }
-:root { --background: #eceee9; --foreground: #12161c; --muted: #4f5763; --blue: #3d4fe0; --line: #c4c9c0; --paper: #f7f8f5; --heading-font: 'Bricolage Grotesque', Arial, sans-serif; --mono-font: 'JetBrains Mono', monospace; color-scheme: light; }
+:root {
+  /* Brand palette. Pink 500 is sampled from the AXLT logos in the project root. */
+  --color-pink-50: #fff7fa;
+  --color-pink-100: #fce6ee;
+  --color-pink-200: #f7bfd2;
+  --color-pink-500: #ef4b7d;
+  --color-pink-700: #b82253;
+  --color-pink-800: #921d46;
+  --color-white: #ffffff;
+  --color-ink-100: #ede8eb;
+  --color-ink-200: #e4ccd6;
+  --color-ink-300: #dbc5ce;
+  --color-ink-600: #6c5661;
+  --color-ink-700: #5b404d;
+  --color-ink-900: #241a20;
+
+  /* Use these semantic tokens in components so the whole site stays in sync. */
+  --brand: var(--color-pink-500);
+  --on-brand: var(--color-ink-900);
+  --accent: var(--color-pink-700);
+  --accent-hover: var(--color-pink-800);
+  --on-accent: var(--color-white);
+  --background: var(--color-white);
+  --paper: var(--color-white);
+  --surface-subtle: var(--color-pink-50);
+  --surface-tint: var(--color-pink-100);
+  --foreground: var(--color-ink-900);
+  --muted: var(--color-ink-600);
+  --line: var(--color-ink-100);
+  --focus: var(--accent);
+
+  /* Light text and accents for dark sections. */
+  --surface-inverse: var(--color-ink-900);
+  --on-inverse: var(--color-pink-50);
+  --muted-inverse: var(--color-ink-300);
+  --line-inverse: var(--color-ink-700);
+  --accent-inverse: var(--color-pink-200);
+
+  --heading-font: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --mono-font: 'JetBrains Mono', monospace;
+  --site-width: 1184px;
+  --page-gutter: clamp(24px, 4.5vw, 56px);
+  --section-space: clamp(64px, 8vw, 112px);
+  color-scheme: light;
+}
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--background); color: var(--foreground); font: 17px/1.55 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+body { margin: 0; background: var(--background); color: var(--foreground); font: 16px/1.65 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1,h2,h3,h4,p { margin: 0; }
-h1,h2,h3,h4 { font-family: var(--heading-font); font-weight: 700; }
-a { color: inherit; text-decoration: none; }
-a:hover { color: var(--blue); }
+h1,h2,h3,h4 { font-family: var(--heading-font); font-weight: 500; }
+a { color: inherit; text-decoration: none; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
+a:hover { color: var(--accent-hover); }
 button { font: inherit; }
-::selection { background: var(--blue); color: white; }
-:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+::selection { background: var(--brand); color: var(--on-brand); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } a { transition: none; } }

@@ -1,15 +1,18 @@
-.profile { padding-block: 80px; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start; }
-.portraitColumn { flex: 1 1 320px; max-width: 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
-.portrait { aspect-ratio: 4/5; background: #d8d3c4; display: grid; place-items: center; color: var(--muted); font: 13px var(--mono-font); letter-spacing: .08em; }
-.bio { flex: 2 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
-.bio h2 { font-size: clamp(32px,4vw,48px); line-height: 1.08; letter-spacing: -.025em; }
-.bio p { max-width: 620px; font-size: 19px; }
+.profile { position: relative; padding-block: var(--section-space); display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr); gap: 72px; align-items: center; }
+.profile::before { content: ''; position: absolute; top: 0; left: var(--page-gutter); right: var(--page-gutter); height: 1px; background: var(--line); }
+.portraitColumn { min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.portrait { aspect-ratio: 1; padding: clamp(32px, 5vw, 64px); background: var(--surface-subtle); display: grid; place-items: center; }
+.studioMark { display: block; width: 100%; height: auto; }
+.bio { min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.bio h2 { font-size: clamp(32px, 3.6vw, 44px); line-height: 1.16; letter-spacing: -.035em; }
+.bio p { max-width: 560px; font-size: 17px; line-height: 1.75; }
 .muted { color: var(--muted); }
-.directionGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
-.now, .next { padding: 36px 32px; display: flex; flex-direction: column; gap: 18px; }
-.now { background: var(--foreground); color: var(--background); }
-.now .eyebrow, .now > span { color: #aeb6ff; }
-.next { border: 2px solid var(--foreground); padding: 34px 30px; }
-.directionGrid p { border-top: 1px solid var(--line); padding-top: 14px; font-size: 19px; }
-.now p { border-color: #3a414c; }
-@media (max-width: 600px) { .profile { padding-block: 48px; } .directionGrid { grid-template-columns: minmax(0,1fr); } }
+.directionGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.now, .next { padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 16px; }
+.directionGrid p { font-size: 18px; }
+@media (max-width: 900px) { .profile { gap: 40px; } }
+@media (max-width: 600px) {
+  .profile, .directionGrid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .portraitColumn { max-width: 420px; }
+  .bio p { font-size: 16px; }
+}

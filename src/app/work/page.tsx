@@ -4,5 +4,5 @@ import { AppCards, Rally, OtherWorks } from "../project-cards";
 import styles from "../page.module.css";
 export const metadata: Metadata = { title: "Work — AXLT Studio", description: "Explore our apps, Rally, Liquid Cat Sort, and Half Byte." };
 export default function Work() {
- return <><Header /><main><section className={`${styles.container} ${styles.pageIntro}`}><span className={styles.eyebrow}>Selected work</span><h1>Apps already in people’s hands.</h1><p>A selection of apps designed and shipped before AXLT Studio. Each of these has a release in the App Store.</p></section><section id="apps" aria-label="Apps on the App Store" className={`${styles.container} ${styles.section}`} style={{paddingTop:0}}><AppCards expanded /></section><Rally dark /><OtherWorks /></main><Footer /></>;
+ return <><Header /><main><section className={`${styles.container} ${styles.pageIntro}`}><span className={styles.eyebrow}>Selected work</span><h1>Apps already in people’s hands.</h1><p>A selection of apps designed and shipped before AXLT Studio. Each of these has a release in the App Store.</p></section><section id="apps" aria-label="Apps on the App Store" className={`${styles.container} ${styles.section} ${styles.workSection}`}><AppCards expanded /></section><Rally /><OtherWorks /></main><Footer /></>;
 }
