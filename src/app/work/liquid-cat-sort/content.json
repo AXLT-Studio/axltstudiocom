@@ -1,0 +1,46 @@
+{
+  "title": "Liquid Cat Sort",
+  "heroImage": "/images/liquidcatsort/hero.png",
+  "tags": [
+    "Mobile Game Development",
+    "Unity",
+    "Game UI/UX Design"
+  ],
+  "overview": {
+    "summary": "Liquid Cat Sort is a playful reinterpretation of the classic Water Sort Puzzle game, designed as a personal exploration into game UI design. Wanting to experiment with something new outside traditional UX work, I challenged myself to reimagine the sorting mechanics using a charming pixel art aesthetic.",
+    "items": [
+      {
+        "label": "Timeline",
+        "value": "Mar 2024 - In Progress (Paused)"
+      },
+      {
+        "label": "My Role",
+        "value": "Game UI Designer, Developer"
+      },
+      {
+        "label": "Team",
+        "value": "1 Game Developer"
+      },
+      {
+        "label": "Tools",
+        "value": "Unity, PixiEditor, Figma"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "content": "Current design snapshot"
+    },
+    {
+      "kind": "image",
+      "content": "/images/liquidcatsort/liquidcatsort_demo.png",
+      "alt": "Demo Screenshot"
+    },
+    {
+      "kind": "image",
+      "content": "/images/liquidcatsort/liquidcatsort_design.png",
+      "alt": "Liquid Cat Sort Design"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "title": "Half-Byte: It's a Nybble!",
+  "subtitle": "How I Designed a Board Game from Scratch to Crowdfunding Success",
+  "projectUrl": "https://www.kickstarter.com/projects/axltgamestudio/half-byte-its-a-nybble?ref=project_link",
+  "heroImage": "/images/halfbyte/hero.png",
+  "ctaText": "View Kickstarter Campaign",
+  "tags": [
+    "Game Design",
+    "Game UI Design",
+    "Instruction Design",
+    "Crowdfunding"
+  ],
+  "overview": {
+    "summary": "Half Byte is a fast-paced card game that I have personally designed, developed, and playtested. This project marks my foray into board game design and has allowed me to explore a range of design tools and concepts. The game was envisioned to be not only engaging but also educational, with a focus on teaching players the fundamentals of Boolean algebra. This case study details the journey from conception to execution and shares insights from the playtesting and crowdfunding experiences.",
+    "items": [
+      {
+        "label": "Timeline",
+        "value": "Aug 2020 - Aug 2023"
+      },
+      {
+        "label": "My Role",
+        "value": "Game Designer"
+      },
+      {
+        "label": "Team",
+        "value": "1 game designer"
+      },
+      {
+        "label": "Tools",
+        "value": "Figma, Blender, Adobe Creative Suite"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "content": "/SHOWCASE"
+    },
+    {
+      "kind": "heading",
+      "content": "Half Byte: It's a Nybble!"
+    },
+    {
+      "kind": "text",
+      "content": "Trailer for Half Byte."
+    },
+    {
+      "kind": "image",
+      "content": "/images/halfbyte/halfbyte_openbox.png",
+      "alt": "Half Byte first edition box and cards"
+    },
+    {
+      "kind": "text",
+      "content": "Mock-Up rendering of the first edition."
+    },
+    {
+      "kind": "heading",
+      "content": "/CHALLENGES"
+    },
+    {
+      "kind": "text",
+      "content": "Bringing Half Byte to life involved navigating the realities of game development, crowdfunding, and user engagement. From design tweaks to marketing pivots, each step presented its own set of challenges. Through testing, iteration, and reflection on the first failed campaign, I refined both the product and how it was presented\u2014leading to a successful second launch."
+    },
+    {
+      "kind": "heading",
+      "content": "Reframing failure as feedback required humility and persistence"
+    },
+    {
+      "kind": "text",
+      "content": "The first Kickstarter attempt did not meet the goal, but it revealed exactly what needed to change."
+    },
+    {
+      "kind": "heading",
+      "content": "Designing for fun and clarity meant constant playtesting"
+    },
+    {
+      "kind": "text",
+      "content": "Balancing game mechanics and instructions was key to ensuring the game felt smooth and engaging."
+    },
+    {
+      "kind": "heading",
+      "content": "Standing out on Kickstarter meant more than a good idea"
+    },
+    {
+      "kind": "text",
+      "content": "Visuals, messaging, and timing all played a role in building trust and interest."
+    },
+    {
+      "kind": "heading",
+      "content": "/LESSONS LEARNED"
+    },
+    {
+      "kind": "text",
+      "content": "Throughout the development of Half Byte! - It's a Nybble board game, I gained crucial insights in three key areas: playtesting, Kickstarter campaign management, and design."
+    },
+    {
+      "kind": "heading",
+      "content": "1. Playtesting:"
+    },
+    {
+      "kind": "text",
+      "content": "Iterative playtesting sessions with diverse players were instrumental in refining game mechanics, ensuring engaging and accessible gameplay for a wide audience."
+    },
+    {
+      "kind": "heading",
+      "content": "2. Kickstarter Campaign:"
+    },
+    {
+      "kind": "text",
+      "content": "Planning and overseeing the Kickstarter campaign taught me the importance of meticulous preparation, effective communication with backers, and real-time monitoring to address inquiries and make necessary adjustments."
+    },
+    {
+      "kind": "heading",
+      "content": "3. Design Process:"
+    },
+    {
+      "kind": "text",
+      "content": "Crafting cards, icons, and layouts emphasized the significance of maintaining a consistent and thematic design. Utilizing tools like Adobe Dimension, Figma, Illustrator, and Blender, I prioritized universal icons to create visually appealing and globally accessible game elements."
+    },
+    {
+      "kind": "heading",
+      "content": "Design Process"
+    },
+    {
+      "kind": "heading",
+      "content": "/BACKGROUND"
+    },
+    {
+      "kind": "heading",
+      "content": "Path to become a game designer..."
+    },
+    {
+      "kind": "text",
+      "content": "Half Byte! is my first board game creation, driven by a desire to introduce an educational yet entertaining card game that simplifies Boolean algebra. Given manufacturing constraints and cost considerations, I opted for a design exclusively featuring cards. The initial prototype involved hand-drawn cards, evolving into a printed prototype created with my own resources."
+    },
+    {
+      "kind": "image",
+      "content": "/images/halfbyte/problem.png",
+      "alt": "Early Half Byte card game prototype"
+    },
+    {
+      "kind": "heading",
+      "content": "/HOW I DESIGNED HALF BYTE?"
+    },
+    {
+      "kind": "text",
+      "content": "Half Byte! is inspired by Boolean Algebra, although not all logic concepts were integrated to maintain simplicity. The game comprises a deck of cards, each featuring a unique icon for language-agnostic gameplay. The majority of text on the cards is presented in a \"computer language,\" eliminating the need for translation."
+    },
+    {
+      "kind": "image",
+      "content": "/images/halfbyte/halfbyte_logic.png",
+      "alt": "Boolean logic used in Half Byte"
+    },
+    {
+      "kind": "heading",
+      "content": "/CARD DESIGN"
+    },
+    {
+      "kind": "text",
+      "content": "To make the game more accessible in different languages, all the cards has an unique icon. Most texts in the cards are \u201ccomputer language\u201d which were usually not translated."
+    },
+    {
+      "kind": "image",
+      "content": "/images/halfbyte/halfbyte_carddesign.png",
+      "alt": "Half Byte card icons and designs"
+    },
+    {
+      "kind": "text",
+      "content": "The game features 16 \"task cards,\" each representing a binary \"number.\" The cards include English and hexadecimal references for clarity. The card backs are influenced by PCB board designs, enhancing the thematic appeal of the game. The card back is inspired by a PCB board."
+    },
+    {
+      "kind": "image",
+      "content": "/images/halfbyte/halfbyte_taskcard.png",
+      "alt": "Binary task cards and circuit board inspired card backs"
+    }
+  ]
+}
