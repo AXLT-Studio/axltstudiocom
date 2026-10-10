@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { appStoreCards } from "./apps";
+import { AppStoreIcon, PlayStoreIcon } from "./store-icons";
 import styles from "./page.module.css";
 export function AppCards({ expanded = false }: { expanded?: boolean }) {
  const apps = expanded ? appStoreCards : appStoreCards.slice(0,3);
@@ -11,8 +12,8 @@ export function AppCards({ expanded = false }: { expanded?: boolean }) {
   <h3>{app.name}</h3><p>{app.description}</p>
   {expanded && <dl className={styles.facts}><div><dt>Platform</dt><dd>{app.androidLink ? "iOS and Android" : "iOS"}</dd></div></dl>}
   <div className={styles.appLinks}>
-   <a href={app.iosLink} target="_blank" rel="noopener noreferrer" aria-label={`View in the App Store: ${app.name}`} className={styles.textLink}>View in the App Store →</a>
-   {app.androidLink && <a href={app.androidLink} target="_blank" rel="noopener noreferrer" aria-label={`View in the Play Store: ${app.name}`} className={styles.textLink}>View in the Play Store →</a>}
+   <a href={app.iosLink} target="_blank" rel="noopener noreferrer" aria-label={`View in the App Store: ${app.name}`} className={styles.textLink}><AppStoreIcon className={styles.storeIcon} /><span>View in the App Store →</span></a>
+   {app.androidLink && <a href={app.androidLink} target="_blank" rel="noopener noreferrer" aria-label={`View in the Play Store: ${app.name}`} className={styles.textLink}><PlayStoreIcon className={styles.storeIcon} /><span>View in the Play Store →</span></a>}
   </div>
  </article>)}</div>;
 }
