@@ -4,6 +4,7 @@ import type { ProjectTag } from "./project-types";
 type ProjectBase = {
   id: string;
   tags: readonly ProjectTag[];
+  hidden?: boolean;
 };
 
 type AppProject = ProjectBase & {
@@ -31,6 +32,7 @@ export const workProjects: readonly WorkProject[] = [
   })),
   {
     id: "liquid-cat-sort",
+    hidden: true,
     kind: "case-study",
     name: "Liquid Cat Sort",
     description: "A playful pixel art take on the water sort puzzle.",
@@ -40,6 +42,7 @@ export const workProjects: readonly WorkProject[] = [
   },
   {
     id: "half-byte",
+    hidden: true,
     kind: "case-study",
     name: "Half Byte",
     description: "A card game inspired by Boolean algebra.",

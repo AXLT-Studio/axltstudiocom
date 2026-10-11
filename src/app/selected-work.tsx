@@ -4,7 +4,7 @@ import { WorkGallery } from "./work-gallery";
 import { workProjects } from "./work-projects";
 
 export function SelectedWork({ home = false }: { home?: boolean }) {
-  return <WorkGallery home={home} projects={workProjects.map(project => ({
+  return <WorkGallery home={home} projects={workProjects.filter(project => !project.hidden).map(project => ({
     id: project.id,
     tags: project.tags,
     card: project.kind === "app"

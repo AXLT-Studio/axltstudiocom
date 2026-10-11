@@ -1,16 +1,8 @@
-import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
 import horizontalLogo from "../../AXLT Studio-Horizontal Logo.png";
+import { inversionz } from "./brand-font";
 import styles from "./page.module.css";
-
-const inversionz = localFont({
- src: "../../public/fonts/inversionz-unboxed.ttf",
- weight: "400",
- style: "normal",
- display: "swap",
- preload: false,
-});
 
 export { Header } from "./site-header";
 export function Footer() {

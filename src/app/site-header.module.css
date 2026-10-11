@@ -1,8 +1,10 @@
 .header { background: var(--background); }
 .inner { max-width: var(--site-width); margin-inline: auto; padding-inline: var(--page-gutter); min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
-.brand { position: relative; display: block; width: 144px; height: 44px; flex-shrink: 0; overflow: hidden; }
+.brand { display: inline-flex; align-items: flex-end; gap: 12px; min-height: 44px; flex-shrink: 0; }
+.brandLogoFrame { position: relative; display: block; width: 144px; height: 44px; flex-shrink: 0; overflow: hidden; }
 /* Frame the artwork inside the source image's white margins. */
 .brandLogo { position: absolute; top: 50%; left: 50%; display: block; width: 184px; height: auto; max-width: none; transform: translate(-50%, -50%); mix-blend-mode: multiply; }
+.brandStudio { font-size: 22px; font-weight: 400; line-height: 1; letter-spacing: .03em; color: var(--color-gray-700); }
 .desktop { display: flex; align-items: center; gap: 32px; font-size: 14px; color: var(--muted); }
 .desktop a { display: inline-flex; align-items: center; min-height: 44px; border-bottom: 1px solid transparent; }
 .desktop .active { border-color: var(--brand); color: var(--foreground); }
@@ -10,8 +12,8 @@
 
 @media (max-width: 600px) {
   .inner { min-height: 84px; }
-  .brand { width: 128px; }
-  .brandLogo { width: 164px; }
+  .brandLogoFrame { width: 112px; height: 32px; }
+  .brandLogo { width: 144px; }
   .toggle { display: flex; flex-direction: column; justify-content: center; gap: 6px; width: 44px; height: 44px; border: 0; background: transparent; color: var(--foreground); padding: 11px; cursor: pointer; }
   .toggle span { width: 22px; height: 1px; background: currentColor; }
   .desktop { display: none; }
