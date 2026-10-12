@@ -4,7 +4,6 @@ import { Rally } from "./project-cards";
 import { SelectedWork } from "./selected-work";
 import { serviceGroups } from "./services/content";
 import styles from "./page.module.css";
-const summaries = ["Find out what people need before anything gets built.","Shape the product and the brand people will recognize.","Launch it, then keep it healthy."];
 export default function Home() {
  return <><Header /><main>
   <section className={`${styles.container} ${styles.hero}`}>
@@ -12,7 +11,7 @@ export default function Home() {
   </section>
   <section className={styles.paperBand}><div className={`${styles.container} ${styles.section}`}>
    <div className={styles.sectionHeading}><span className={styles.eyebrow}>What we do</span><h2>From the first question to a finished product</h2></div>
-   <div className={styles.serviceCards}>{serviceGroups.map((group,index) => <article className={styles.serviceCard} key={group.title}><span className={styles.coordinates}>0{index+1}</span><h3>{group.title}</h3><p>{summaries[index]}</p><div>{group.services.map(service => <div className={styles.servicePreview} key={service.title}><h4>{service.title}</h4><p>{service.description}</p></div>)}</div></article>)}</div>
+   <div className={styles.serviceCards}>{serviceGroups.map((group,index) => <article className={styles.serviceCard} key={group.title}><span className={styles.coordinates}>0{index+1}</span><h3>{group.title}</h3><p>{group.description}</p><div>{group.services.map(service => <div className={styles.servicePreview} key={service.title}><h4>{service.title}</h4><p>{service.description}</p></div>)}</div></article>)}</div>
    <Link href="/services" className={styles.textLink}>All services →</Link>
   </div></section>
   <SelectedWork home />

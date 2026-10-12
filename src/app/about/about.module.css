@@ -1,18 +1,11 @@
-.profile { position: relative; padding-block: var(--section-space); display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr); gap: 72px; align-items: center; }
+.profile { position: relative; padding-block: var(--section-space); display: flex; justify-content: center; }
 .profile::before { content: ''; position: absolute; top: 0; left: var(--page-gutter); right: var(--page-gutter); height: 1px; background: var(--line); }
-.portraitColumn { min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.portraitColumn { width: 100%; max-width: 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
 .portrait { aspect-ratio: 1; padding: clamp(32px, 5vw, 64px); background: var(--surface-subtle); display: grid; place-items: center; }
 .studioMark { display: block; width: 100%; height: auto; }
-.bio { min-width: 0; display: flex; flex-direction: column; gap: 24px; }
-.bio h2 { font-size: clamp(32px, 3.6vw, 44px); line-height: 1.16; letter-spacing: -.035em; }
-.bio p { max-width: 560px; font-size: 17px; line-height: 1.75; }
-.muted { color: var(--muted); }
 .directionGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
 .now, .next { padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 16px; }
 .directionGrid p { font-size: 18px; }
-@media (max-width: 900px) { .profile { gap: 40px; } }
 @media (max-width: 600px) {
-  .profile, .directionGrid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
-  .portraitColumn { max-width: 420px; }
-  .bio p { font-size: 16px; }
+  .directionGrid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
 }
