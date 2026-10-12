@@ -19,7 +19,7 @@
 .coordinates { font-size: 12px; letter-spacing: .01em; color: var(--muted); }
 
 .section { position: relative; padding-block: var(--section-space); display: flex; flex-direction: column; gap: 56px; }
-.section::before, .rallyRow::before, .footer::before { content: ''; position: absolute; top: 0; left: var(--page-gutter); right: var(--page-gutter); height: 1px; background: var(--line); }
+.section::before, .rallyRow::before { content: ''; position: absolute; top: 0; left: var(--page-gutter); right: var(--page-gutter); height: 1px; background: var(--line); }
 .paperBand { background: var(--paper); }
 .sectionHeading { display: grid; grid-template-columns: minmax(140px, 1fr) minmax(0, 3fr); gap: 18px 48px; align-items: start; }
 .sectionHeading > .eyebrow { padding-top: 7px; }
